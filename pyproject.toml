@@ -1,13 +1,13 @@
 [project]
 dependencies = [
-  "litestar[jinja,jwt,structlog,cryptography,pydantic]",
+  "litestar[jinja,jwt,structlog,cryptography,pydantic]>=2.21.1",
   "advanced-alchemy[uuid,obstore,pwdlib]",
   "redis",
   "psycopg[pool,binary]",
   "python-dotenv",
   "litestar-saq[hiredis]",
   "litestar-vite>=0.22.1",
-  "uvicorn[standard]",
+  "uvicorn[standard]>=0.46.0",
   "litestar-email[smtp]>=0.3.0",
   "httpx-oauth",
   "pyotp>=2.9.0",

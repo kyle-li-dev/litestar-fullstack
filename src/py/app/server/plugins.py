@@ -7,6 +7,7 @@ from litestar_email import EmailPlugin
 from litestar_saq import SAQPlugin
 from litestar_vite import VitePlugin
 
+import app.lib.patches  # noqa: F401  # Apply monkey-patches for third-party bugs before litestar-vite is used
 from app import config
 from app.utils.domain import DomainPlugin
 from app.utils.oauth import OAuth2ProviderPlugin
