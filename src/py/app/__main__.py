@@ -22,8 +22,6 @@ def setup_environment() -> None:
     settings = get_settings()
     os.environ.setdefault("LITESTAR_APP", "app.server.asgi:create_app")
     os.environ.setdefault("LITESTAR_APP_NAME", settings.app.NAME)
-    os.environ.setdefault("LITESTAR_GRANIAN_IN_SUBPROCESS", "false")
-    os.environ.setdefault("LITESTAR_GRANIAN_USE_LITESTAR_LOGGER", "true")
     original_format_help = LitestarExtensionGroup.format_help
 
     def fixed_format_help(self: Any, ctx: Any, formatter: Any) -> None:

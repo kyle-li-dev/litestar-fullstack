@@ -83,7 +83,6 @@ class ApplicationCore(InitPluginProtocol, CLIPluginProtocol):
         app_config.plugins.extend(
             [
                 plugins.structlog,
-                plugins.granian,
                 plugins.alchemy,
                 plugins.vite,
                 plugins.get_saq_plugin(),

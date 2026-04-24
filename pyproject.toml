@@ -7,7 +7,7 @@ dependencies = [
   "python-dotenv",
   "litestar-saq[hiredis]",
   "litestar-vite>=0.15.0b4",
-  "litestar-granian[uvloop]",
+  "uvicorn[standard]",
   "litestar-email[smtp]>=0.3.0",
   "httpx-oauth",
   "pyotp>=2.9.0",

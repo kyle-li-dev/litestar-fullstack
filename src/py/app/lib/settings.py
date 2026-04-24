@@ -495,17 +495,12 @@ class LogSettings:
                             "level": max(self.LEVEL, logging.WARNING),
                             "handlers": ["queue_listener"],
                         },
-                        "_granian": {
+                        "uvicorn.error": {
                             "propagate": False,
                             "level": self.ASGI_ERROR_LEVEL,
                             "handlers": ["queue_listener"],
                         },
-                        "granian.server": {
-                            "propagate": False,
-                            "level": self.ASGI_ERROR_LEVEL,
-                            "handlers": ["queue_listener"],
-                        },
-                        "granian.access": {
+                        "uvicorn.access": {
                             "propagate": False,
                             "level": self.ASGI_ACCESS_LEVEL,
                             "handlers": ["queue_listener"],
