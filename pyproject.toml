@@ -6,7 +6,7 @@ dependencies = [
   "psycopg[pool,binary]",
   "python-dotenv",
   "litestar-saq[hiredis]",
-  "litestar-vite>=0.15.0b4",
+  "litestar-vite>=0.22.1",
   "uvicorn[standard]",
   "litestar-email[smtp]>=0.3.0",
   "httpx-oauth",

@@ -20,6 +20,10 @@ and this project adheres to [Semantic Versioning](https://semver.org).
 - **auth**: Complete authentication system — password, OAuth, and TOTP/2FA
 - **database**: PostgreSQL with Advanced Alchemy ORM, migrations, and connection pooling
 - **email**: React email templates compiled to HTML with SMTP delivery via Mailpit (dev)
+- **email**: `EMAIL_BACKEND` environment variable with two modes: `console` (default) and `smtp`
+  - `console`: prints email content to the terminal — ideal for quick development and debugging
+  - `smtp`: sends emails via SMTP — use with Mailpit during local development
+  - ⚠️ You must run `make build-emails` to compile email templates before sending; otherwise an error will occur
 - **worker**: Background task processing with SAQ + Redis
 - **docker**: Production-ready distroless container and development Docker Compose stack
 - **docs**: MkDocs Material documentation site with search, dark mode, and Mermaid diagrams
