@@ -57,6 +57,8 @@ install: destroy clean                              ## Install the project, depe
 		$(MAKE) install-bun; \
 	fi
 	@cd src/js/web && bun install --frozen-lockfile >/dev/null 2>&1
+	@echo "${INFO} Installing pre-commit hooks..."
+	@uv run pre-commit install >/dev/null 2>&1
 	@echo "${OK} Installation complete! 🎉"
 
 .PHONY: upgrade
